@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+@source '../**/*.tsx';
+
+:root {
+    --brand-color: #4f46e5;
+}
+
+@theme {
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+    --font-brand: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+    --color-brand: var(--brand-color);
+}
